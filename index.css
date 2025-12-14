@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #0d1b2a;
+    color: #e0e1dd;
+    line-height: 1.6;
+}
+
+.capçalera {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fons-capçalera {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('img/Ark_Fons.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.títol-container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(13, 27, 42, 0.8);
+    border-radius: 10px;
+    border: 2px solid #415a77;
+}
+
+.capçalera h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: #ff9e00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    letter-spacing: 2px;
+}
+
+.subtítol {
+    font-size: 1.2rem;
+    color: #e0e1dd;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    background-color: #1b263b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #415a77;
+    box-shadow: 0 0 20px rgba(255, 158, 0, 0.5);
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(255, 158, 0, 0.8));
+}
+
+.menú-principal {
+    background-color: #1b263b;
+    padding: 15px 0;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menú-lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.menú-element {
+    margin: 0 15px;
+}
+
+.menú-element a {
+    color: #e0e1dd;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.menú-element a i {
+    margin-right: 10px;
+    color: #ff9e00;
+}
+
+.menú-element a:hover {
+    background-color: #415a77;
+    color: #ff9e00;
+    transform: translateY(-3px);
+}
+
+.menú-element a.active {
+    background-color: #ff9e00;
+    color: #0d1b2a;
+}
+
+.contingut-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+}
+
+.secció {
+    margin-bottom: 60px;
+    padding: 30px;
+    background-color: rgba(27, 38, 59, 0.7);
+    border-radius: 10px;
+    border: 1px solid #415a77;
+}
+
+.secció h2 {
+    color: #ff9e00;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #415a77;
+    padding-bottom: 10px;
+}
+
+.secció h2 i {
+    margin-right: 10px;
+}
+
+.benvinguda-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.destacat {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    background-color: rgba(13, 27, 42, 0.5);
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #415a77;
+}
+
+.destacat-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.destacat-text h3 {
+    color: #ff9e00;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.destacat-text p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.destacat-imatge {
+    flex: 1;
+    min-width: 300px;
+}
+
+.destacat-imatge img {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #415a77;
+}
+
+.youtubers h3 {
+    color: #ff9e00;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.youtubers h3 i {
+    margin-right: 10px;
+    color: #ff0000;
+}
+
+.youtubers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.youtuber {
+    background-color: #0d1b2a;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #415a77;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.youtuber:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
+    border-color: #ff0000;
+}
+
+.youtuber-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.youtuber-icon {
+    font-size: 2rem;
+    color: #ff0000;
+    margin-right: 15px;
+}
+
+.youtuber h4 {
+    color: #ff9e00;
+    font-size: 1.4rem;
+}
+
+.youtuber p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.btn-youtube {
+    display: inline-block;
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.btn-youtube:hover {
+    background-color: #cc0000;
+}
+
+.actualitat h3 {
+    color: #ff9e00;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.actualitat h3 i {
+    margin-right: 10px;
+}
+
+.noticies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.noticia {
+    background-color: #0d1b2a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #415a77;
+    transition: transform 0.3s ease;
+}
+
+.noticia:hover {
+    transform: translateY(-5px);
+    border-color: #ff9e00;
+}
+
+.noticia h4 {
+    color: #ff9e00;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.noticia .data {
+    color: #778da9;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.noticia p {
+    line-height: 1.6;
+}
+
+.peu-pàgina {
+    background-color: #1b263b;
+    padding: 40px 20px;
+    border-top: 3px solid #415a77;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.contacte h3, .copyright h3, .xarxes-socials h3 {
+    color: #ff9e00;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.contacte p, .copyright p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contacte i {
+    margin-right: 10px;
+    color: #ff9e00;
+}
+
+.xarxes-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.xarxes-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #415a77;
+    border-radius: 50%;
+    color: #e0e1dd;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.xarxes-icons a:hover {
+    background-color: #ff9e00;
+    color: #0d1b2a;
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .capçalera h1 {
+        font-size: 2.2rem;
+    }
+    
+    .menú-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menú-element {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .menú-element a {
+        justify-content: center;
+    }
+    
+    .destacat {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .youtubers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .noticies {
+        grid-template-columns: 1fr;
+    }
+    
+    .cartes-contingut {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .youtubers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
