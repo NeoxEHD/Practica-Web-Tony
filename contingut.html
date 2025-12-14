@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARK - Contingut</title>
+    <link rel="stylesheet" href="contingut.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="capçalera">
+        <div class="fons-capçalera">
+            <div class="títol-container">
+                <h1>ARK SURVIVAL EVOLVED</h1>
+                <p class="subtítol">Sobreviveix, domina, evoluciona</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="logo-container">
+        <div class="logo">
+            <img src="img/Logo_Ark_PNG.png" alt="Logo ARK" class="logo-img">
+        </div>
+    </div>
+
+    <nav class="menú-principal">
+        <ul class="menú-lista">
+            <li class="menú-element"><a href="index.html"><i class="fas fa-home"></i> Inici</a></li>
+            <li class="menú-element"><a href="presentacio.html"><i class="fas fa-info-circle"></i> Presentació</a></li>
+            <li class="menú-element"><a href="contingut.html" class="active"><i class="fas fa-book"></i> Contingut</a>
+            </li>
+            <li class="menú-element"><a href="galeria.html"><i class="fas fa-images"></i> Galeria</a></li>
+            <li class="menú-element"><a href="enllaços.html"><i class="fas fa-link"></i> Enllaços</a></li>
+        </ul>
+    </nav>
+
+    <main class="contingut-principal amb-menu-lateral">
+        <button class="btn-desplegar-menu" id="btnDesplegarMenu">
+            <i class="fas fa-bars"></i> Menú de Contingut
+        </button>
+
+        <aside class="menu-lateral" id="menuLateral">
+            <div class="menu-titol">
+                <h3><i class="fas fa-bars"></i> Menú de Contingut</h3>
+                <button class="btn-tancar-menu" id="btnTancarMenu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <ul class="menu-lateral-lista">
+                <li class="menu-lateral-element">
+                    <a href="#criatures" class="menu-link active" data-contingut="criatures">
+                        <i class="fas fa-dragon"></i> Criatures
+                    </a>
+                </li>
+                <li class="menu-lateral-element">
+                    <a href="#mapes" class="menu-link" data-contingut="mapes">
+                        <i class="fas fa-map"></i> Mapes
+                    </a>
+                </li>
+                <li class="menu-lateral-element">
+                    <a href="#armes" class="menu-link" data-contingut="armes">
+                        <i class="fas fa-crosshairs"></i> Armes
+                    </a>
+                </li>
+                <li class="menu-lateral-element">
+                    <a href="#recursos" class="menu-link" data-contingut="recursos">
+                        <i class="fas fa-gem"></i> Recursos
+                    </a>
+                </li>
+                <li class="menu-lateral-element">
+                    <a href="#tribus" class="menu-link" data-contingut="tribus">
+                        <i class="fas fa-users"></i> Tribus
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <section class="contingut-dinamic" id="contingutDinamic">
+
+            <article class="contingut-actiu" id="criatures">
+                <h2><i class="fas fa-dragon"></i> Criatures de ARK</h2>
+
+                <div class="intro-contingut">
+                    <p>ARK: Survival Evolved conté més de 100 criatures diferents que poden ser domesticades. Aquí tens
+                        la classificació completa segons el seu tipus i mètode de domesticació.</p>
+                </div>
+
+                <div class="criatures-categories">
+                    <h3>Categories de Criatures</h3>
+
+                    <div class="categories-grid">
+                        <div class="categoria-criatura">
+                            <h4><i class="fas fa-leaf"></i> Herbívores</h4>
+                            <p>Criatures pacífiques que s'alimenten de vegetació. Són més fàcils de domesticar i útils
+                                per a recol·lectar recursos.</p>
+                            <ul>
+                                <li>Triceratops</li>
+                                <li>Stegosaurus</li>
+                                <li>Parasaurolophus</li>
+                                <li>Mammoth</li>
+                                <li>Brontosaurus</li>
+                                <li>Iguanodon</li>
+                            </ul>
+                        </div>
+
+                        <div class="categoria-criatura">
+                            <h4><i class="fas fa-tooth"></i> Carnívores</h4>
+                            <p>Depredadors perillosos però útils en combat i protecció. Requereixen carn per
+                                domesticar-les.</p>
+                            <ul>
+                                <li>T-Rex</li>
+                                <li>Raptor</li>
+                                <li>Spinosaurus</li>
+                                <li>Sabertooth</li>
+                                <li>Carnotaurus</li>
+                                <li>Allosaurus</li>
+                            </ul>
+                        </div>
+
+                        <div class="categoria-criatura">
+                            <h4><i class="fas fa-star"></i> Domesticació Especial</h4>
+                            <p>Criatures que requereixen mètodes especials de domesticació diferents als habituals.</p>
+                            <ul>
+                                <li>Giganotosaurus</li>
+                                <li>Quetzal</li>
+                                <li>Tusoteuthis</li>
+                                <li>Basilosaurus</li>
+                                <li>Rock Elemental</li>
+                                <li>Wyvern</li>
+                            </ul>
+                        </div>
+
+                        <div class="categoria-criatura">
+                            <h4><i class="fas fa-ban"></i> No Domesticables</h4>
+                            <p>Criatures que no es poden domesticar de cap manera. Són perilloses i s'han d'evitar o
+                                eliminar.</p>
+                            <ul>
+                                <li>Alpha Creatures</li>
+                                <li>Leedsichthys</li>
+                                <li>Piranha</li>
+                                <li>Pulmonoscorpius (tret de mods)</li>
+                                <li>Troodon</li>
+                            </ul>
+                        </div>
+
+                        <div class="categoria-criatura">
+                            <h4><i class="fas fa-crown"></i> Bosses</h4>
+                            <p>Criatures extremadament poderoses que actuen com a caps finals. No es poden domesticar.
+                            </p>
+                            <ul>
+                                <li>Broodmother</li>
+                                <li>Megapithecus</li>
+                                <li>Dragon</li>
+                                <li>Manticore</li>
+                                <li>Overseer</li>
+                            </ul>
+                        </div>
+
+                        <div class="categoria-criatura">
+                            <h4><i class="fas fa-feather-alt"></i> Voladores</h4>
+                            <p>Criatures que poden volar, perfectes per a l'exploració ràpida i transport.</p>
+                            <ul>
+                                <li>Pteranodon</li>
+                                <li>Argentavis</li>
+                                <li>Quetzal</li>
+                                <li>Pelagornis</li>
+                                <li>Tapejara</li>
+                                <li>Wyvern</li>
+                            </ul>
+                        </div>
+
+                        <div class="categoria-criatura">
+                            <h4><i class="fas fa-water"></i> Aquàtiques</h4>
+                            <p>Criatures que habiten en rius, llacs i oceans. Essencials per a l'exploració submarina.
+                            </p>
+                            <ul>
+                                <li>Megalodon</li>
+                                <li>Plesiosaurus</li>
+                                <li>Mosasaurus</li>
+                                <li>Ichthyosaurus</li>
+                                <li>Dunkleosteus</li>
+                            </ul>
+                        </div>
+
+                        <div class="categoria-criatura">
+                            <h4><i class="fas fa-utensils"></i> Omnívores</h4>
+                            <p>Criatures que mengen tant vegetació com carn. Són versàtils i fàcils d'alimentar.</p>
+                            <ul>
+                                <li>Therizinosaurus</li>
+                                <li>Beaver</li>
+                                <li>Gigantopithecus</li>
+                                <li>Oviraptor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="domesticacio-tipus">
+                    <h3><i class="fas fa-graduation-cap"></i> Formes de Domesticar</h3>
+
+                    <div class="tipus-domesticacio-grid">
+                        <div class="tipus-domesticacio">
+                            <h4><i class="fas fa-utensil-spoon"></i> Per menjar</h4>
+                            <p>El mètode més comú. Col·loca aliment a l'inventari de la criatura inconscient.</p>
+                            <ul>
+                                <li>Herbívores: Baies, Fruites</li>
+                                <li>Carnívores: Carn, Peix</li>
+                                <li>Omnívores: Qualsevol aliment</li>
+                            </ul>
+                        </div>
+
+                        <div class="tipus-domesticacio">
+                            <h4><i class="fas fa-syringe"></i> Tranquil·litzants</h4>
+                            <p>Utilitza fletxes o dards tranquil·litzants per a criatures més grans i perilloses.</p>
+                            <ul>
+                                <li>T-Rex</li>
+                                <li>Spinosaurus</li>
+                                <li>Argentavis</li>
+                                <li>Megalodon</li>
+                            </ul>
+                        </div>
+
+                        <div class="tipus-domesticacio">
+                            <h4><i class="fas fa-magic"></i> Mètodes Especials</h4>
+                            <p>Criatures que requereixen tècniques úniques de domesticació.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="domesticacio-especial">
+                    <h3><i class="fas fa-wand-magic-sparkles"></i> Domesticació Especial Detallada</h3>
+
+                    <div class="especial-item">
+                        <div class="especial-text">
+                            <h4>Giganotosaurus</h4>
+                            <p>Aquestes espècies es domestiquen amb <strong>tranquil·litzants de qualitat
+                                    superior</strong>. Necessita estar inconscient durant molt temps i requereix grans
+                                quantitats de carn. És recomanable construir una gàbia amb portes de metall abans
+                                d'intentar domesticar-lo.</p>
+                        </div>
+                        <div class="especial-imatge">
+                            <img src="img/giga.webp" alt="Giganotosaurus">
+                        </div>
+                    </div>
+
+                    <div class="especial-item inversa">
+                        <div class="especial-text">
+                            <h4>Quetzal</h4>
+                            <p>Aquestes espècies es domestiquen <strong>des de l'aire</strong>. Necessites una
+                                plataforma voladora i una persona que piloti mentre una altra dispari tranquil·litzants.
+                                És més fàcil si tens un Argentavis o Tapejara amb un segon seient.</p>
+                        </div>
+                        <div class="especial-imatge">
+                            <img src="img/quetzal.jpeg" alt="Quetzal">
+                        </div>
+                    </div>
+
+                    <div class="especial-item">
+                        <div class="especial-text">
+                            <h4>Tusoteuthis (Calamar Gegant)</h4>
+                            <p>Aquestes espècies es domestiquen <strong>alimentant-les amb black pearls mentre et
+                                    subjectes a elles</strong>. Necessites un escafandre i preparar-te per al combat
+                                submarí. És una de les domesticacions més perilloses del joc.</p>
+                        </div>
+                        <div class="especial-imatge">
+                            <img src="img/tuso.jpg" alt="Tusoteuthis">
+                        </div>
+                    </div>
+
+                    <div class="especial-item inversa">
+                        <div class="especial-text">
+                            <h4>Rock Elemental</h4>
+                            <p>Aquestes espècies es domestiquen <strong>utilitzant canonades de càrrega o canons amb
+                                    bales d'explosius</strong>. Dispara a la seva cara per danyar-lo sense destruir-lo.
+                                Necessites moltes bales d'explosius i una posició elevada.</p>
+                        </div>
+                        <div class="especial-imatge">
+                            <img src="img/Rock.avif" alt="Rock Elemental">
+                        </div>
+                    </div>
+
+                    <div class="especial-item">
+                        <div class="especial-text">
+                            <h4>Basilosaurus</h4>
+                            <p>Aquestes espècies es domestiquen <strong>alimentant-les amb carn mentre et mantes a prop
+                                    sense atacar-les</strong>. És immunes als electrificadors, però té molta salut. És
+                                recomanable utilitzar un escafandre i estar atent als depredadors.</p>
+                        </div>
+                        <div class="especial-imatge">
+                            <img src="img/basilo.webp" alt="Basilosaurus">
+                        </div>
+                    </div>
+
+                    <div class="especial-item inversa">
+                        <div class="especial-text">
+                            <h4>Wyvern</h4>
+                            <p>Aquestes espècies <strong>NO es poden domesticar amb mètodes tradicionals</strong>. Has
+                                de robar un ou de Wyvern del niu i incubar-lo. Un cop nascut, alimenta la cria amb llet
+                                de Wyvern (obtinguda de Wyverns femella domesticades amb mods) o amb llet de màquina. És
+                                extremadament perillós robar els ous, ja que els pares defensen agressivament els nius.
+                            </p>
+                            <p><strong>Tipus de Wyverns:</strong> Foc, Llamp, Gel, Verí, Forja</p>
+                        </div>
+                        <div class="especial-imatge">
+                            <img src="img/wyvern.webp" alt="Wyvern">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resum-domesticacio">
+                    <h3><i class="fas fa-clipboard-list"></i> Resum de Domesticació</h3>
+                    <div class="resum-content">
+                        <p>Recorda aquests consells per a domesticacions exitoses:</p>
+                        <ul class="consells-lista">
+                            <li><i class="fas fa-check-circle"></i> Preparar l'equipament adequat abans de començar</li>
+                            <li><i class="fas fa-check-circle"></i> Construir una gàbia per a criatures perilloses</li>
+                            <li><i class="fas fa-check-circle"></i> Portar menjar extra i tranquil·litzants</li>
+                            <li><i class="fas fa-check-circle"></i> Vigilar els depredadors durant la domesticació</li>
+                            <li><i class="fas fa-check-circle"></i> Utilitzar narcòtics per mantenir les criatures
+                                inconscients</li>
+                            <li><i class="fas fa-check-circle"></i> Començar amb criatures petites per guanyar
+                                experiència</li>
+                            <li><i class="fas fa-check-circle"></i> Per a Wyverns: anar amb molta cura als nius i
+                                preparar una incubadora</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="contingut-ocult" id="mapes">
+                <h2><i class="fas fa-map"></i> Mapes de ARK</h2>
+
+                <div class="intro-contingut">
+                    <p>ARK ofereix diversos mapes oficials i de la comunitat, cada un amb el seu propi entorn, criatures
+                        i reptes únics. <strong>Clica en qualsevol mapa per veure la seva imatge!</strong></p>
+                </div>
+
+                <div class="mapes-lista">
+                    <div class="mapa-item" onclick="mostrarImatgeMapa('island')">
+                        <h3>The Island</h3>
+                        <p>El mapa original on comença l'aventura. Una illa tropical amb diversos biomes i els misteris
+                            de l'ARK.</p>
+                        <div class="contenidor-imatge-mapa">
+                            <img src="img/mapa island.webp" 
+                                 id="island" 
+                                 class="imatge-mapa" 
+                                 alt="The Island - Mapa de ARK: Survival Evolved"
+                                 loading="lazy">
+                            <div class="descripcio-imatge-mapa">
+                                <p><strong>The Island</strong> - El mapa original amb biomes variats i secrets per descobrir.</p>
+                            </div>
+                        </div>
+                        <div class="indicador-clic-mapa">
+                            <i class="fas fa-mouse-pointer"></i> Clica per mostrar/amagar la imatge
+                        </div>
+                    </div>
+
+                    <div class="mapa-item" onclick="mostrarImatgeMapa('scorched')">
+                        <h3>Scorched Earth</h3>
+                        <p>Un desert implacable amb calor extrema, tempestes de sorra i noves criatures adaptades al
+                            clima àrid.</p>
+                        <div class="contenidor-imatge-mapa">
+                            <img src="img/mapa scorth earth.webp" 
+                                 id="scorched" 
+                                 class="imatge-mapa" 
+                                 alt="Scorched Earth - Mapa desert de ARK"
+                                 loading="lazy">
+                            <div class="descripcio-imatge-mapa">
+                                <p><strong>Scorched Earth</strong> - Desert extrem amb tempestes de sorra i criatures úniques.</p>
+                            </div>
+                        </div>
+                        <div class="indicador-clic-mapa">
+                            <i class="fas fa-mouse-pointer"></i> Clica per mostrar/amagar la imatge
+                        </div>
+                    </div>
+
+                    <div class="mapa-item" onclick="mostrarImatgeMapa('aberration')">
+                        <h3>Aberration</h3>
+                        <p>Un ARK danyat amb bioluminescència, zones radioactives i criatures que no es troben en cap
+                            altre lloc.</p>
+                        <div class="contenidor-imatge-mapa">
+                            <img src="img/mapa aberration.jpg" 
+                                 id="aberration" 
+                                 class="imatge-mapa" 
+                                 alt="Aberration - Mapa bioluminescent de ARK"
+                                 loading="lazy">
+                            <div class="descripcio-imatge-mapa">
+                                <p><strong>Aberration</strong> - Entorn subterrani bioluminescent amb perills radioactius.</p>
+                            </div>
+                        </div>
+                        <div class="indicador-clic-mapa">
+                            <i class="fas fa-mouse-pointer"></i> Clica per mostrar/amagar la imatge
+                        </div>
+                    </div>
+
+                    <div class="mapa-item" onclick="mostrarImatgeMapa('extinction')">
+                        <h3>Extinction</h3>
+                        <p>La Terra després de l'apocalipsi, amb ciutats en ruïnes, titans gegantins i el destí de
+                            l'humanitat en joc.</p>
+                        <div class="contenidor-imatge-mapa">
+                            <img src="img/mapa exticion.webp" 
+                                 id="extinction" 
+                                 class="imatge-mapa" 
+                                 alt="Extinction - Mapa postapocalíptic de ARK"
+                                 loading="lazy">
+                            <div class="descripcio-imatge-mapa">
+                                <p><strong>Extinction</strong> - Terra postapocalíptica amb ciutats destruïdes i titans.</p>
+                            </div>
+                        </div>
+                        <div class="indicador-clic-mapa">
+                            <i class="fas fa-mouse-pointer"></i> Clica per mostrar/amagar la imatge
+                        </div>
+                    </div>
+
+                    <div class="mapa-item" onclick="mostrarImatgeMapa('genesis')">
+                        <h3>Genesis</h3>
+                        <p>Un simulador de realitat virtual amb biomes surrealistes i missions que recompensen l'exploració.</p>
+                        <div class="contenidor-imatge-mapa">
+                            <img src="img/mapa genesis.jpeg" 
+                                 id="genesis" 
+                                 class="imatge-mapa" 
+                                 alt="Genesis - Mapa de realitat virtual de ARK"
+                                 loading="lazy">
+                            <div class="descripcio-imatge-mapa">
+                                <p><strong>Genesis</strong> - Simulador amb biomes únics i missions especials.</p>
+                            </div>
+                        </div>
+                        <div class="indicador-clic-mapa">
+                            <i class="fas fa-mouse-pointer"></i> Clica per mostrar/amagar la imatge
+                        </div>
+                    </div>
+                </div>
+
+                <div class="controls-imatges">
+                    <button class="boto-control" onclick="mostrarTotesImatgesMapes()">
+                        <i class="fas fa-images"></i> Mostrar totes les imatges
+                    </button>
+                    <button class="boto-control" onclick="amagarTotesImatgesMapes()">
+                        <i class="fas fa-eye-slash"></i> Amagar totes les imatges
+                    </button>
+                </div>
+            </article>
+
+            <article class="contingut-ocult" id="armes">
+                <h2><i class="fas fa-crosshairs"></i> Armes de ARK</h2>
+
+                <div class="intro-contingut">
+                    <p>Les armes són essencials per a la supervivència, la domesticació i el combat PvP. Aquí tens una
+                        classificació completa.</p>
+                </div>
+
+                <div class="seccio-armes">
+                    <h3><i class="fas fa-syringe"></i> Armes per a Domesticació</h3>
+
+                    <div class="armes-grid">
+                        <div class="arma-item">
+                            <div class="arma-imatge">
+                                <img src="img/arc dormir.jpg" alt="Arc i Fletxes">
+                            </div>
+                            <div class="arma-text">
+                                <h4>Arc i Fletxes Tranquil·litzants</h4>
+                                <p>L'arma bàsica per a domesticacions. Les fletxes tranquil·litzants posen les criatures
+                                    inconscients per poder domesticar-les.</p>
+                                <ul>
+                                    <li><strong>Ús:</strong> Criatures petites i mitjanes</li>
+                                    <li><strong>Nivell requerit:</strong> 21</li>
+                                    <li><strong>Dany de son:</strong> 26 per fletxa</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="arma-item inversa">
+                            <div class="arma-imatge">
+                                <img src="img/arpon.jpg" alt="Arpò Tranquil·litzant">
+                            </div>
+                            <div class="arma-text">
+                                <h4>Arpò Tranquil·litzant</h4>
+                                <p>Per a criatures grans i resistents. Dispara dards tranquil·litzants que apliquen molt
+                                    dany de son.</p>
+                                <ul>
+                                    <li><strong>Ús:</strong> Criatures grans (T-Rex, Spino)</li>
+                                    <li><strong>Nivell requerit:</strong> 62</li>
+                                    <li><strong>Dany de son:</strong> 200 per dart</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="arma-item">
+                            <div class="arma-imatge">
+                                <img src="img/rifle.webp" alt="Rifle Tranquil·litzant">
+                            </div>
+                            <div class="arma-text">
+                                <h4>Rifle Tranquil·litzant</h4>
+                                <p>La millor arma per a domesticacions. Alta precisió i gran dany de son a llarga
+                                    distància.</p>
+                                <ul>
+                                    <li><strong>Ús:</strong> Criatures perilloses a distància</li>
+                                    <li><strong>Nivell requerit:</strong> 96</li>
+                                    <li><strong>Dany de son:</strong> 266 per dard</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="arma-item inversa">
+                            <div class="arma-imatge">
+                                <img src="img/cañon.jpg" alt="Canó de Càrrega">
+                            </div>
+                            <div class="arma-text">
+                                <h4>Canó de Càrrega</h4>
+                                <p>Per a criatures especials com els Rock Elementals. Dispara bales d'explosius que
+                                    infligeixen dany de son.</p>
+                                <ul>
+                                    <li><strong>Ús:</strong> Rock Elementals, bosses</li>
+                                    <li><strong>Nivell requerit:</strong> 50</li>
+                                    <li><strong>Dany de son:</strong> 500 per impacte</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seccio-armes">
+                    <h3><i class="fas fa-skull-crossbones"></i> Armes per a PvP</h3>
+
+                    <div class="armes-grid">
+                        <div class="arma-item">
+                            <div class="arma-imatge">
+                                <img src="img/escopeta moderna.jpg" alt="Escopeta de PvP">
+                            </div>
+                            <div class="arma-text">
+                                <h4>Escopeta de Pum</h4>
+                                <p>L'arma més potent a curta distància. Capaç d'eliminar jugadors amb una bona
+                                    descàrrega.</p>
+                                <ul>
+                                    <li><strong>Dany:</strong> 630 per projectil</li>
+                                    <li><strong>Rang:</strong> Curt (efectiu a 5m)</li>
+                                    <li><strong>Estratègia:</strong> Emboscades, defensa de bases</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="arma-item inversa">
+                            <div class="arma-imatge">
+                                <img src="img/rifle de asalto.png" alt="Rifle d'Assalt">
+                            </div>
+                            <div class="arma-text">
+                                <h4>Rifle d'Assalt</h4>
+                                <p>Versàtil i efectiu a mitjana distància. Excel·lent per a combat general i setges.</p>
+                                <ul>
+                                    <li><strong>Dany:</strong> 47 per bala</li>
+                                    <li><strong>Rang:</strong> Mitjà (efectiu a 100m)</li>
+                                    <li><strong>Estratègia:</strong> Combat general, suport</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="arma-item">
+                            <div class="arma-imatge">
+                                <img src="img/rifle de francotirador.jpg" alt="Francotirador">
+                            </div>
+                            <div class="arma-text">
+                                <h4>Rifle de Francotirador</h4>
+                                <p>Precisió letal a llarga distància. Ideal per eliminar objectius prioritari des de
+                                    lluny.</p>
+                                <ul>
+                                    <li><strong>Dany:</strong> 165 per bala</li>
+                                    <li><strong>Rang:</strong> Llarg (efectiu a 300m+)</li>
+                                    <li><strong>Estratègia:</strong> Eliminacions a distància</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="arma-item inversa">
+                            <div class="arma-imatge">
+                                <img src="img/lanza cohetes.jpeg" alt="Llançacoets">
+                            </div>
+                            <div class="arma-text">
+                                <h4>Llançacoets</h4>
+                                <p>Màxima potència destructiva. Perfecte per destruir bases i grups enemics.</p>
+                                <ul>
+                                    <li><strong>Dany:</strong> 1100 per coet</li>
+                                    <li><strong>Rang:</strong> Mitjà (efectiu a 50m)</li>
+                                    <li><strong>Estratègia:</strong> Setges, destrucció de defenses</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seccio-armes">
+                    <h3><i class="fas fa-magic"></i> Armes Especials i Tek</h3>
+
+                    <div class="armes-grid">
+                        <div class="arma-item">
+                            <div class="arma-imatge">
+                                <img src="img/rifle tek.webp" alt="Rifle Tek">
+                            </div>
+                            <div class="arma-text">
+                                <h4>Rifle Tek</h4>
+                                <p>Tecnologia alienígena avançada. Dispara raigs d'energia i té visió tèrmica integrada.
+                                </p>
+                                <ul>
+                                    <li><strong>Dany:</strong> 100 per raig</li>
+                                    <li><strong>Especial:</strong> Visió tèrmica, raigs penetrants</li>
+                                    <li><strong>Requisit:</strong> Derrotar bosses per desbloquejar</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="arma-item inversa">
+                            <div class="arma-imatge">
+                                <img src="img/espada tek.jpg" alt="Espasa Tek">
+                            </div>
+                            <div class="arma-text">
+                                <h4>Espasa Tek</h4>
+                                <p>Arma cos a cos de tecnologia alienígena. Alta velocitat i dany devastador.</p>
+                                <ul>
+                                    <li><strong>Dany:</strong> 150 per atac</li>
+                                    <li><strong>Especial:</strong> Atacs ràpids, ignora armadura</li>
+                                    <li><strong>Requisit:</strong> Tecnologia avançada</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="contingut-ocult" id="recursos">
+                <h2><i class="fas fa-gem"></i> Recursos de ARK</h2>
+
+                <div class="intro-contingut">
+                    <p>Els recursos són la base de la supervivència. Apreneu on trobar-los i com utilitzar-los
+                        eficientment.</p>
+                </div>
+
+                <div class="recursos-categories">
+                    <h3>Tipus de Recursos Bàsics</h3>
+
+                    <div class="recursos-grid">
+                        <div class="recurso-item">
+                            <div class="recurso-imatge">
+                                <img src="img/fusta.webp" alt="Fusta">
+                            </div>
+                            <div class="recurso-text">
+                                <h4>Fusta</h4>
+                                <p>Obtinguda tallant arbres. És el recurs més bàsic per a construcció primitiva i eines.
+                                </p>
+                                <ul>
+                                    <li><strong>Eina recomanada:</strong> Destral</li>
+                                    <li><strong>Millor font:</strong> Seqüoies</li>
+                                    <li><strong>Ús principal:</strong> Construcció, eines, focs</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="recurso-item inversa">
+                            <div class="recurso-imatge">
+                                <img src="img/pedra.webp" alt="Pedra">
+                            </div>
+                            <div class="recurso-text">
+                                <h4>Pedra</h4>
+                                <p>Recollida de roques petites i grans. Essencial per a eines de pedra i construcció
+                                    avançada.</p>
+                                <ul>
+                                    <li><strong>Eina recomanada:</strong> Pic</li>
+                                    <li><strong>Millor font:</strong> Rocas grises</li>
+                                    <li><strong>Ús principal:</strong> Fons, pedra tallada, argila</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="recurso-item">
+                            <div class="recurso-imatge">
+                                <img src="img/metal.webp" alt="Metall">
+                            </div>
+                            <div class="recurso-text">
+                                <h4>Metall</h4>
+                                <p>El recurs més important per a tecnologia avançada. Es troba en roques amb vetes
+                                    negres.</p>
+                                <ul>
+                                    <li><strong>Eina recomanada:</strong> Pic de metall</li>
+                                    <li><strong>Millor font:</strong> Muntanyes</li>
+                                    <li><strong>Ús principal:</strong> Armes, armadures, estructures</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="recurso-item inversa">
+                            <div class="recurso-imatge">
+                                <img src="img/obsidiana.webp" alt="Obsidiana">
+                            </div>
+                            <div class="recurso-text">
+                                <h4>Obsidiana</h4>
+                                <p>Mineral volcànic necessari per a tecnologia avançada. Es troba en zones volcàniques.
+                                </p>
+                                <ul>
+                                    <li><strong>Eina recomanada:</strong> Pic de metall</li>
+                                    <li><strong>Millor font:</strong> Volcans, muntanyes altes</li>
+                                    <li><strong>Ús principal:</strong> Polvor, cristall, tecnologia</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recursos-avancats">
+                    <h3>Recursos Avançats i Especials</h3>
+
+                    <div class="avancats-grid">
+                        <div class="avancat-item">
+                            <h4><i class="fas fa-gem"></i> Cristall</h4>
+                            <p>Mineral brillant necessari per a tecnologia tek i algunes estructures avançades.</p>
+                            <p><strong>On trobar:</strong> Coves, muntanyes, zones volcàniques</p>
+                        </div>
+
+                        <div class="avancat-item">
+                            <h4><i class="fas fa-oil-can"></i> Oli</h4>
+                            <p>Recurs per a tecnologia industrial i medicina. Es pot obtenir de roques al mar o de
+                                criatures aquàtiques.</p>
+                            <p><strong>On trobar:</strong> Fons marí, trilobits, roques negres</p>
+                        </div>
+
+                        <div class="avancat-item">
+                            <h4><i class="fas fa-pearl"></i> Perles de Silica</h4>
+                            <p>Recurs submarí necessari per a electrònica i algunes estructures avançades.</p>
+                            <p><strong>On trobar:</strong> Fons marí, trilobits, algi</p>
+                        </div>
+
+                        <div class="avancat-item">
+                            <h4><i class="fas fa-fire"></i> Polvor</h4>
+                            <p>Combinació de carbó i pedra tallada. Essencial per a munició i explosius.</p>
+                            <p><strong>Com obtenir:</strong> 1 Carbó + 2 Pedra tallada</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="contingut-ocult" id="tribus">
+                <h2><i class="fas fa-users"></i> Tribus de ARK</h2>
+
+                <div class="intro-contingut">
+                    <p>Les tribus són grups de jugadors que col·laboren per sobreviure i prosperar. Apreneu com
+                        gestionar-les eficientment.</p>
+                </div>
+
+                <div class="tribus-info">
+                    <div class="tribu-item">
+                        <div class="tribu-imatge">
+                            <img src="img/tribu gestio.jpg" alt="Tribu ARK">
+                        </div>
+                        <div class="tribu-text">
+                            <h3>Creació i Gestió de Tribus</h3>
+                            <p>Per crear una tribu, prem la tecla <strong>L</strong> i posa un nom. Pots afegir jugadors
+                                fent-los sol·licitud d'aliança o acceptant les seves sol·licituds.</p>
+                            <ul>
+                                <li><strong>Límit de membres:</strong> Fins a 70 jugadors per tribu</li>
+                                <li><strong>Funcions:</strong> Admin, Manager, Member</li>
+                                <li><strong>Compartició:</strong> Recursos, criatures, estructures</li>
+                                <li><strong>Log de tribu:</strong> Registre de totes les accions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tribu-item inversa">
+                        <div class="tribu-imatge">
+                            <img src="img/tribu defensa.jpg" alt="Base de Tribu">
+                        </div>
+                        <div class="tribu-text">
+                            <h3>Bases i Defenses Col·lectives</h3>
+                            <p>Les tribus poden construir bases enormes amb defenses coordenades. És important
+                                planificar l'estructura i les defenses.</p>
+                            <ul>
+                                <li><strong>Estructures compartides:</strong> Tots els membres poden construir</li>
+                                <li><strong>Defenses:</strong> Torres automàtiques, trampes, murs</li>
+                                <li><strong>Organització:</strong> Assignar zones específiques</li>
+                                <li><strong>Almacenament:</strong> Caixes i refrigeradors comunals</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tribu-item">
+                        <div class="tribu-imatge">
+                            <img src="img/tribu pvp.png" alt="Combat de Tribus">
+                        </div>
+                        <div class="tribu-text">
+                            <h3>Combat i Estratègies de Tribus</h3>
+                            <p>En PvP, les tribus competeixen per recursos i territoris. La coordinació és clau per al
+                                èxit.</p>
+                            <ul>
+                                <li><strong>Roles:</strong> Exploradors, constructors, combatents</li>
+                                <li><strong>Estratègies:</strong> Atacs coordinats, defenses en capes</li>
+                                <li><strong>Comunicació:</strong> Ús de Discord o VoIP essencial</li>
+                                <li><strong>Aliances:</strong> Pactar amb altres tribus per avantatges</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tribu-item inversa">
+                        <div class="tribu-imatge">
+                            <img src="img/ark evento.jpeg" alt="Esdeveniments de Tribu">
+                        </div>
+                        <div class="tribu-text">
+                            <h3>Esdeveniments i Activitats de Tribu</h3>
+                            <p>Les tribus organitzen activitats per millorar l'experiència de joc i la cohesió del grup.
+                            </p>
+                            <ul>
+                                <li><strong>Expedicions:</strong> Exploració conjunta de mapes</li>
+                                <li><strong>Caçades:</strong> Domesticació col·lectiva de criatures</li>
+                                <li><strong>Construccions:</strong> Projectes arquitectònics comunals</li>
+                                <li><strong>Entrenaments:</strong> Pràctiques de combat PvP</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tribus-conseils">
+                    <h3><i class="fas fa-lightbulb"></i> Consells per a Tribus Exitoses</h3>
+                    <div class="conseils-grid">
+                        <div class="conseil-item">
+                            <h4><i class="fas fa-user-friends"></i> Comunicació</h4>
+                            <p>Establir canals de comunicació clars. Utilitzar Discord o altres aplicacions de VoIP per
+                                a coordinació en temps real.</p>
+                        </div>
+
+                        <div class="conseil-item">
+                            <h4><i class="fas fa-tasks"></i> Organització</h4>
+                            <p>Assignar rols específics a cada membre: recol·lectors, constructors, domesticadors,
+                                combatents.</p>
+                        </div>
+
+                        <div class="conseil-item">
+                            <h4><i class="fas fa-shield-alt"></i> Seguretat</h4>
+                            <p>Implementar múltiples capes de defensa a les bases. Mantenir criatures de guàrdia i
+                                torres automàtiques.</p>
+                        </div>
+
+                        <div class="conseil-item">
+                            <h4><i class="fas fa-handshake"></i> Confiança</h4>
+                            <p>Construir relacions de confiança entre membres. Evitar afegir jugadors desconeguts sense
+                                referències.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="peu-pàgina">
+        <div class="footer-content">
+            <div class="contacte">
+                <h3>Contacte</h3>
+                <p><i class="fas fa-envelope"></i> info@arkweb.cat</p>
+                <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="any3"></span> Ark Web. Tots els drets reservats.</p>
+                <p>ARK: Survival Evolved és una marca registrada de Studio Wildcard.</p>
+            </div>
+            <div class="xarxes-socials">
+                <h3>Segueix-nos</h3>
+                <div class="xarxes-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('any3').textContent = new Date().getFullYear();
+
+        const btnDesplegarMenu = document.getElementById('btnDesplegarMenu');
+        const btnTancarMenu = document.getElementById('btnTancarMenu');
+        const menuLateral = document.getElementById('menuLateral');
+        const menuLinks = document.querySelectorAll('.menu-link');
+        const continguts = document.querySelectorAll('.contingut-dinamic article');
+
+        btnDesplegarMenu.addEventListener('click', () => {
+            menuLateral.classList.add('obert');
+        });
+
+        btnTancarMenu.addEventListener('click', () => {
+            menuLateral.classList.remove('obert');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                menuLinks.forEach(l => l.classList.remove('active'));
+
+                this.classList.add('active');
+
+                continguts.forEach(contingut => {
+                    contingut.classList.remove('contingut-actiu');
+                    contingut.classList.add('contingut-ocult');
+                });
+
+                const contingutId = this.getAttribute('data-contingut');
+                const contingutAMostrar = document.getElementById(contingutId);
+                if (contingutAMostrar) {
+                    contingutAMostrar.classList.remove('contingut-ocult');
+                    contingutAMostrar.classList.add('contingut-actiu');
+                }
+
+                if (window.innerWidth <= 768) {
+                    menuLateral.classList.remove('obert');
+                }
+            });
+        });
+
+        let mapaActiu = null;
+        
+        function mostrarImatgeMapa(id) {
+            const imatge = document.getElementById(id);
+            const mapaItem = imatge.closest('.mapa-item');
+            
+            if (imatge.classList.contains('mostrar')) {
+                imatge.classList.remove('mostrar');
+                mapaItem.classList.remove('imatge-activa');
+                mapaActiu = null;
+            } else {
+                if (mapaActiu && mapaActiu !== imatge) {
+                    mapaActiu.classList.remove('mostrar');
+                    mapaActiu.closest('.mapa-item').classList.remove('imatge-activa');
+                }
+                
+                imatge.classList.add('mostrar');
+                mapaItem.classList.add('imatge-activa');
+                mapaActiu = imatge;
+                
+                imatge.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'nearest',
+                    inline: 'nearest' 
+                });
+            }
+        }
+        
+        function mostrarTotesImatgesMapes() {
+            const imatges = document.querySelectorAll('.imatge-mapa');
+            const mapesItems = document.querySelectorAll('.mapa-item');
+            
+            imatges.forEach(imatge => {
+                imatge.classList.add('mostrar');
+            });
+            
+            mapesItems.forEach(item => {
+                item.classList.add('imatge-activa');
+            });
+        }
+        
+        function amagarTotesImatgesMapes() {
+            const imatges = document.querySelectorAll('.imatge-mapa');
+            const mapesItems = document.querySelectorAll('.mapa-item');
+            
+            imatges.forEach(imatge => {
+                imatge.classList.remove('mostrar');
+            });
+            
+            mapesItems.forEach(item => {
+                item.classList.remove('imatge-activa');
+            });
+            
+            mapaActiu = null;
+        }
+    </script>
+</body>
+</html>

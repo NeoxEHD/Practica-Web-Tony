@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARK - Galeria</title>
+    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="capçalera">
+        <div class="fons-capçalera">
+            <div class="títol-container">
+                <h1>ARK SURVIVAL EVOLVED</h1>
+                <p class="subtítol">Sobreviveix, domina, evoluciona</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="logo-container">
+        <div class="logo">
+            <img src="img/Logo_Ark_PNG.png" alt="Logo ARK" class="logo-img">
+        </div>
+    </div>
+
+    <nav class="menú-principal">
+        <ul class="menú-lista">
+            <li class="menú-element"><a href="index.html"><i class="fas fa-home"></i> Inici</a></li>
+            <li class="menú-element"><a href="presentacio.html"><i class="fas fa-info-circle"></i> Presentació</a></li>
+            <li class="menú-element"><a href="contingut.html"><i class="fas fa-book"></i> Contingut</a></li>
+            <li class="menú-element"><a href="galeria.html" class="active"><i class="fas fa-images"></i> Galeria</a></li>
+            <li class="menú-element"><a href="enllaços.html"><i class="fas fa-link"></i> Enllaços</a></li>
+        </ul>
+    </nav>
+
+    <main class="galeria-principal">
+        <div class="submenu-galeria">
+            <button class="categoria-btn active" data-categoria="dinossures">
+                <i class="fas fa-dragon"></i> Dinossures
+            </button>
+            <button class="categoria-btn" data-categoria="construccio">
+                <i class="fas fa-hammer"></i> Construcció
+            </button>
+            <button class="categoria-btn" data-categoria="jugadors">
+                <i class="fas fa-users"></i> Jugadors
+            </button>
+            <button class="categoria-btn" data-categoria="paisatge">
+                <i class="fas fa-mountain"></i> Paisatge
+            </button>
+        </div>
+
+        <section id="dinossures" class="seccio-galeria active">
+            <h2 class="titol-seccio"><i class="fas fa-dragon"></i> Dinossures de ARK</h2>
+            <p class="descripcio-seccio">Col·lecció de les criatures més emblemàtiques i poderoses de l'univers ARK. Des dels temibles carnívors fins als majestuosos herbívors.</p>
+            
+            <div class="grid-galeria">
+                <div class="item-galeria" data-img="1">
+                    <img src="img/T-rex.webp" alt="T-Rex">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Tyrannosaurus Rex</div>
+                        <div class="desc-imatge">El rei dels depredadors</div>
+                    </div>
+                </div>
+
+                <div class="item-galeria" data-img="2">
+                    <img src="img/argentavis.webp" alt="Argentavis">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Argentavis</div>
+                        <div class="desc-imatge">El transportador volador</div>
+                    </div>
+                </div>
+
+                <div class="item-galeria" data-img="3">
+                    <img src="img/megalodon.webp" alt="Megalodon">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Megalodon</div>
+                        <div class="desc-imatge">Tauró prehistòric gegant</div>
+                    </div>
+                </div>
+
+                <div class="item-galeria" data-img="4">
+                    <img src="img/raptor.webp" alt="Raptor">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Raptor</div>
+                        <div class="desc-imatge">Depredador ràpid i intel·ligent</div>
+                    </div>
+                </div>
+
+                <div class="item-galeria" data-img="5">
+                    <img src="img/spino.webp" alt="Spinosaurus">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Spinosaurus</div>
+                        <div class="desc-imatge">Carnívor semi-aquàtic</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls-galeria">
+                <div class="contador-imatges">5 imatges</div>
+                <button class="boto-descarrega" onclick="descarregarImatges('dinossures')">
+                    <i class="fas fa-download"></i> Descarregar col·lecció
+                </button>
+            </div>
+        </section>
+
+        <section id="construccio" class="seccio-galeria">
+            <h2 class="titol-seccio"><i class="fas fa-hammer"></i> Construcció i Bases</h2>
+            <p class="descripcio-seccio">Arquitectura i estructures des de bases primitives fins a fortaleses tecnològiques avançades.</p>
+            
+            <div class="grid-galeria">
+                <div class="item-galeria" data-img="6">
+                    <img src="img/base de paja.webp" alt="Base Primitiva">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Base Primitiva</div>
+                        <div class="desc-imatge">Cabanes de fusta i pedra</div>
+                    </div>
+                </div>
+
+                <div class="item-galeria" data-img="7">
+                    <img src="img/base de metal.jpeg" alt="Base de Metall">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Base de Metall</div>
+                        <div class="desc-imatge">Estructures metàl·liques avançades</div>
+                    </div>
+                </div>
+
+                <div class="item-galeria" data-img="8">
+                    <img src="img/base de tek.jpg" alt="Base Tek">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Base Tek</div>
+                        <div class="desc-imatge">Tecnologia alienígena</div>
+                    </div>
+                </div>
+
+                <div class="item-galeria" data-img="9">
+                    <img src="img/base de pvp.jpg" alt="Sistema de Defensa">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Sistema de Defensa</div>
+                        <div class="desc-imatge">Torres i trampes automàtiques</div>
+                    </div>
+                </div>
+
+                <div class="item-galeria" data-img="10">
+                    <img src="img/base decoracion.webp" alt="Interior Decorat">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Interior Decorat</div>
+                        <div class="desc-imatge">Mobiliari i decoracions</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls-galeria">
+                <div class="contador-imatges">5 imatges</div>
+                <button class="boto-descarrega" onclick="descarregarImatges('construccio')">
+                    <i class="fas fa-download"></i> Descarregar col·lecció
+                </button>
+            </div>
+        </section>
+
+        <section id="jugadors" class="seccio-galeria">
+            <h2 class="titol-seccio"><i class="fas fa-users"></i> Jugadors i Tribus</h2>
+            <p class="descripcio-seccio">Acció i interacció entre jugadors en modes PvP i PvE.</p>
+            
+            <div class="grid-galeria">
+                <div class="item-galeria" data-img="11">
+                    <img src="img/pvp dinosaures.jpg" alt="Combat PvP">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Combat PvP</div>
+                        <div class="desc-imatge">Enfrontaments entre jugadors</div>
+                    </div>
+                </div>
+
+                <div class="item-galeria" data-img="12">
+                    <img src="img/tribu coperacion.jpg" alt="Tribu">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Tribu</div>
+                        <div class="desc-imatge">Cooperació entre jugadors</div>
+                    </div>
+                </div>
+
+                <div class="item-galeria" data-img="13">
+                    <img src="img/domesticació.jpg" alt="Domesticació">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Domesticació</div>
+                        <div class="desc-imatge">Treballant amb criatures</div>
+                    </div>
+                </div>
+
+                <div class="item-galeria" data-img="14">
+                    <img src="img/armadures.webp" alt="Equipament">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Equipament</div>
+                        <div class="desc-imatge">Armadures i armes</div>
+                    </div>
+                </div>
+
+                <div class="item-galeria" data-img="15">
+                    <img src="img/event nadal.jpg" alt="Esdeveniment">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Esdeveniment</div>
+                        <div class="desc-imatge">Activitats comunals</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls-galeria">
+                <div class="contador-imatges">5 imatges</div>
+                <button class="boto-descarrega" onclick="descarregarImatges('jugadors')">
+                    <i class="fas fa-download"></i> Descarregar col·lecció
+                </button>
+            </div>
+        </section>
+
+        <section id="paisatge" class="seccio-galeria">
+            <h2 class="titol-seccio"><i class="fas fa-mountain"></i> Paisatges de ARK</h2>
+            <p class="descripcio-seccio">Els espectaculars entorns dels diferents mapes del joc.</p>
+            
+            <div class="grid-galeria">
+                <div class="item-galeria" data-img="16">
+                    <img src="img/paisatge the island.webp" alt="The Island">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">The Island</div>
+                        <div class="desc-imatge">Platges i jungles tropicals</div>
+                    </div>
+                </div>
+
+                <div class="item-galeria" data-img="17">
+                    <img src="img/paisatge scorth earth.jpeg" alt="Scorched Earth">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Scorched Earth</div>
+                        <div class="desc-imatge">Deserts àrids i canyons</div>
+                    </div>
+                </div>
+
+                <div class="item-galeria" data-img="18">
+                    <img src="img/paisatge aberration.jpg" alt="Aberration">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Aberration</div>
+                        <div class="desc-imatge">Coves bioluminescents</div>
+                    </div>
+                </div>
+
+                <div class="item-galeria" data-img="19">
+                    <img src="img/paisatge extincion.jpeg" alt="Extinction">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Extinction</div>
+                        <div class="desc-imatge">Ciutats postapocalíptiques</div>
+                    </div>
+                </div>
+
+                <div class="item-galeria" data-img="20">
+                    <img src="img/paisatge genesis.jpeg" alt="Genesis">
+                    <div class="overlay-galeria">
+                        <div class="titol-imatge">Genesis</div>
+                        <div class="desc-imatge">Biomes surrealistes</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls-galeria">
+                <div class="contador-imatges">5 imatges</div>
+                <button class="boto-descarrega" onclick="descarregarImatges('paisatge')">
+                    <i class="fas fa-download"></i> Descarregar col·lecció
+                </button>
+            </div>
+        </section>
+
+        <div id="modalGaleria" class="modal-galeria">
+            <button class="tancar-modal" onclick="tancarModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-contingut">
+                <img id="modalImg" class="modal-img" src="" alt="">
+                <div class="modal-info">
+                    <h3 id="modalTitol" class="modal-titol"></h3>
+                    <p id="modalDesc" class="modal-desc"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="peu-pàgina">
+        <div class="footer-content">
+            <div class="contacte">
+                <h3>Contacte</h3>
+                <p><i class="fas fa-envelope"></i> info@arkweb.cat</p>
+                <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="any3"></span> Ark Web. Tots els drets reservats.</p>
+                <p>ARK: Survival Evolved és una marca registrada de Studio Wildcard.</p>
+            </div>
+            <div class="xarxes-socials">
+                <h3>Segueix-nos</h3>
+                <div class="xarxes-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('any3').textContent = new Date().getFullYear();
+
+        const categoriaBtns = document.querySelectorAll('.categoria-btn');
+        const seccionsGaleria = document.querySelectorAll('.seccio-galeria');
+
+        categoriaBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                categoriaBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                seccionsGaleria.forEach(seccio => {
+                    seccio.classList.remove('active');
+                });
+                
+                const categoriaId = this.getAttribute('data-categoria');
+                const seccioAMostrar = document.getElementById(categoriaId);
+                if (seccioAMostrar) {
+                    seccioAMostrar.classList.add('active');
+                }
+            });
+        });
+
+        const modal = document.getElementById('modalGaleria');
+        const modalImg = document.getElementById('modalImg');
+        const modalTitol = document.getElementById('modalTitol');
+        const modalDesc = document.getElementById('modalDesc');
+        const itemsGaleria = document.querySelectorAll('.item-galeria');
+
+        itemsGaleria.forEach(item => {
+            item.addEventListener('click', function() {
+                const img = this.querySelector('img');
+                const titol = this.querySelector('.titol-imatge').textContent;
+                const desc = this.querySelector('.desc-imatge').textContent;
+                
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+                modalTitol.textContent = titol;
+                modalDesc.textContent = desc;
+                
+                modal.style.display = 'flex';
+            });
+        });
+
+        function tancarModal() {
+            modal.style.display = 'none';
+        }
+
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                tancarModal();
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                tancarModal();
+            }
+        });
+
+        function descarregarImatges(categoria) {
+            alert(`S'estaria descarregant la col·lecció de ${categoria}. Aquesta funció es podria implementar per descarregar un ZIP amb totes les imatges.`);
+        }
+    </script>
+</body>
+</html>

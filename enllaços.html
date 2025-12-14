@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARK - Enllaços</title>
+    <link rel="stylesheet" href="enllaços.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="capçalera">
+        <div class="fons-capçalera">
+            <div class="títol-container">
+                <h1>ARK SURVIVAL EVOLVED</h1>
+                <p class="subtítol">Sobreviveix, domina, evoluciona</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="logo-container">
+        <div class="logo">
+            <img src="img/Logo_Ark_PNG.png" alt="Logo ARK" class="logo-img">
+        </div>
+    </div>
+
+    <nav class="menú-principal">
+        <ul class="menú-lista">
+            <li class="menú-element"><a href="index.html"><i class="fas fa-home"></i> Inici</a></li>
+            <li class="menú-element"><a href="presentacio.html"><i class="fas fa-info-circle"></i> Presentació</a></li>
+            <li class="menú-element"><a href="contingut.html"><i class="fas fa-book"></i> Contingut</a></li>
+            <li class="menú-element"><a href="galeria.html"><i class="fas fa-images"></i> Galeria</a></li>
+            <li class="menú-element"><a href="enllaços.html" class="active"><i class="fas fa-link"></i> Enllaços</a></li>
+        </ul>
+    </nav>
+
+    <main class="enllaços-principal">
+        <div class="titol-pagina">
+            <h2><i class="fas fa-link"></i> ENLLAÇOS D'INTERÈS</h2>
+            <p class="subtitol-pagina">Recursos oficials i de la comunitat per aprofundir en l'experiència ARK</p>
+        </div>
+
+        <div class="filtre-enllaços">
+            <button class="filtre-btn active" data-categoria="tots">
+                <i class="fas fa-globe"></i> Tots els enllaços
+            </button>
+            <button class="filtre-btn" data-categoria="oficials">
+                <i class="fas fa-crown"></i> Oficials
+            </button>
+            <button class="filtre-btn" data-categoria="comunitat">
+                <i class="fas fa-users"></i> Comunitat
+            </button>
+            <button class="filtre-btn" data-categoria="comprar">
+                <i class="fas fa-shopping-cart"></i> Compra
+            </button>
+            <button class="filtre-btn" data-categoria="aprendre">
+                <i class="fas fa-graduation-cap"></i> Aprendre
+            </button>
+        </div>
+
+        <div class="grid-enllaços">
+            <div class="enllaç-item" data-categoria="oficials apendre">
+                <div class="enllaç-icona">
+                    <i class="fab fa-wikipedia-w"></i>
+                </div>
+                <div class="enllaç-contingut">
+                    <h3>Wikipedia Oficial d'ARK</h3>
+                    <p class="enllaç-desc">La wiki completa amb informació actualitzada sobre criatures, mapes, objectes i mecàniques del joc.</p>
+                    <div class="enllaç-meta">
+                        <span class="categoria-tag oficials">Oficial</span>
+                        <span class="visites"><i class="fas fa-eye"></i> 2.4M/mes</span>
+                    </div>
+                    <a href="https://ark.wiki.gg/wiki/ARK_Survival_Evolved_Wiki" target="_blank" class="enllaç-btn">
+                        <i class="fas fa-external-link-alt"></i> Visitar Wiki
+                    </a>
+                </div>
+            </div>
+
+            <div class="enllaç-item" data-categoria="comunitat">
+                <div class="enllaç-icona">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="enllaç-contingut">
+                    <h3>Fòrums de la Comunitat</h3>
+                    <p class="enllaç-desc">Debats, peticions d'ajuda, guies i discussions amb altres supervivents.</p>
+                    <div class="enllaç-meta">
+                        <span class="categoria-tag comunitat">Comunitat</span>
+                        <span class="visites"><i class="fas fa-users"></i> 500K usuaris</span>
+                    </div>
+                    <a href="https://survivetheark.com/index.php?/forums/" target="_blank" class="enllaç-btn">
+                        <i class="fas fa-external-link-alt"></i> Accedir als Fòrums
+                    </a>
+                </div>
+            </div>
+
+            <div class="enllaç-item" data-categoria="oficials">
+                <div class="enllaç-icona">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <div class="enllaç-contingut">
+                    <h3>YouTube Oficial</h3>
+                    <p class="enllaç-desc">Trailers oficials, guies de desenvolupadors i contingut exclusiu del joc.</p>
+                    <div class="enllaç-meta">
+                        <span class="categoria-tag oficials">Oficial</span>
+                        <span class="visites"><i class="fas fa-play-circle"></i> 1.5M subscriptors</span>
+                    </div>
+                    <a href="https://www.youtube.com/@Survivetheark" target="_blank" class="enllaç-btn">
+                        <i class="fas fa-external-link-alt"></i> Veure Canal
+                    </a>
+                </div>
+            </div>
+
+            <div class="enllaç-item" data-categoria="comprar">
+                <div class="enllaç-icona">
+                    <i class="fab fa-steam"></i>
+                </div>
+                <div class="enllaç-contingut">
+                    <h3>Comprar a Steam</h3>
+                    <p class="enllaç-desc">Pàgina oficial de compra del joc base i totes les expansions disponibles.</p>
+                    <div class="enllaç-meta">
+                        <span class="categoria-tag comprar">Compra</span>
+                        <span class="preu"><i class="fas fa-tag"></i> €39.99</span>
+                    </div>
+                    <a href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/" target="_blank" class="enllaç-btn comprar-btn">
+                        <i class="fas fa-shopping-cart"></i> Comprar Ara
+                    </a>
+                </div>
+            </div>
+
+            <div class="enllaç-item" data-categoria="oficials">
+                <div class="enllaç-icona">
+                    <i class="fas fa-hashtag"></i>
+                </div>
+                <div class="enllaç-contingut">
+                    <h3>Xarxes Socials Oficials</h3>
+                    <p class="enllaç-desc">Estigues connectat amb les darreres notícies, actualitzacions i esdeveniments.</p>
+                    <div class="enllaç-meta">
+                        <span class="categoria-tag oficials">Oficial</span>
+                        <div class="xarxes-lista">
+                            <a href="https://twitter.com/survivetheark" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/survivetheark" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/survivetheark/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://discord.gg/ark" target="_blank"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                    <div class="enllaços-multiple">
+                        <a href="https://twitter.com/survivetheark" target="_blank" class="enllaç-btn xarxa-btn">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="https://www.facebook.com/survivetheark" target="_blank" class="enllaç-btn xarxa-btn">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="enllaç-item" data-categoria="comunitat apendre">
+                <div class="enllaç-icona">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="enllaç-contingut">
+                    <h3>Wiki Fandom ARK</h3>
+                    <p class="enllaç-desc">Wiki mantenida per la comunitat amb guies detallades i estratègies avançades.</p>
+                    <div class="enllaç-meta">
+                        <span class="categoria-tag comunitat">Comunitat</span>
+                        <span class="visites"><i class="fas fa-eye"></i> 1.8M/mes</span>
+                    </div>
+                    <a href="https://ark.fandom.com/wiki/ARK:_Survival_Evolved_Wiki" target="_blank" class="enllaç-btn">
+                        <i class="fas fa-external-link-alt"></i> Accedir a Fandom
+                    </a>
+                </div>
+            </div>
+
+            <div class="enllaç-item" data-categoria="comunitat">
+                <div class="enllaç-icona">
+                    <i class="fab fa-reddit-alien"></i>
+                </div>
+                <div class="enllaç-contingut">
+                    <h3>Reddit r/playark</h3>
+                    <p class="enllaç-desc">Comunitat activa de Reddit per compartir experiències, imatges i preguntes.</p>
+                    <div class="enllaç-meta">
+                        <span class="categoria-tag comunitat">Comunitat</span>
+                        <span class="visites"><i class="fas fa-users"></i> 300K membres</span>
+                    </div>
+                    <a href="https://www.reddit.com/r/playark/" target="_blank" class="enllaç-btn">
+                        <i class="fas fa-external-link-alt"></i> Veure Subreddit
+                    </a>
+                </div>
+            </div>
+
+            <div class="enllaç-item" data-categoria="comprar">
+                <div class="enllaç-icona">
+                    <i class="fab fa-epic-games"></i>
+                </div>
+                <div class="enllaç-contingut">
+                    <h3>Epic Games Store</h3>
+                    <p class="enllaç-desc">Versió del joc per a Epic Games amb ofertes exclusives i contingut extra.</p>
+                    <div class="enllaç-meta">
+                        <span class="categoria-tag comprar">Compra</span>
+                        <span class="preu"><i class="fas fa-tag"></i> Gratuït (oferta)</span>
+                    </div>
+                    <a href="https://store.epicgames.com/en-US/p/ark" target="_blank" class="enllaç-btn comprar-btn">
+                        <i class="fas fa-gift"></i> Obtenir Gratuïtament
+                    </a>
+                </div>
+            </div>
+
+            <div class="enllaç-item" data-categoria="comunitat oficials">
+                <div class="enllaç-icona">
+                    <i class="fab fa-discord"></i>
+                </div>
+                <div class="enllaç-contingut">
+                    <h3>Discord Oficial</h3>
+                    <p class="enllaç-desc">Xat en temps real amb desenvolupadors i la comunitat més activa.</p>
+                    <div class="enllaç-meta">
+                        <span class="categoria-tag oficials">Oficial</span>
+                        <span class="categoria-tag comunitat">Comunitat</span>
+                    </div>
+                    <a href="https://discord.gg/ark" target="_blank" class="enllaç-btn">
+                        <i class="fab fa-discord"></i> Unir-se al Discord
+                    </a>
+                </div>
+            </div>
+
+            <div class="enllaç-item" data-categoria="aprendre">
+                <div class="enllaç-icona">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="enllaç-contingut">
+                    <h3>Mapes Interactius</h3>
+                    <p class="enllaç-desc">Mapes detallats amb ubicacions de recursos, criatures i punts d'interès.</p>
+                    <div class="enllaç-meta">
+                        <span class="categoria-tag apendre">Recurs</span>
+                        <span class="visites"><i class="fas fa-map-pin"></i> 15 mapes</span>
+                    </div>
+                    <a href="https://ark.gamepedia.com/Interactive_ARK_Map" target="_blank" class="enllaç-btn">
+                        <i class="fas fa-external-link-alt"></i> Explorar Mapes
+                    </a>
+                </div>
+            </div>
+
+            <div class="enllaç-item" data-categoria="aprendre">
+                <div class="enllaç-icona">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="enllaç-contingut">
+                    <h3>Calculadores de Domesticació</h3>
+                    <p class="enllaç-desc">Eines per calcular el temps i recursos necessaris per domesticar qualsevol criatura.</p>
+                    <div class="enllaç-meta">
+                        <span class="categoria-tag apendre">Eina</span>
+                        <span class="visites"><i class="fas fa-tools"></i> +100 criatures</span>
+                    </div>
+                    <a href="https://arkids.net/" target="_blank" class="enllaç-btn">
+                        <i class="fas fa-external-link-alt"></i> Utilitzar Calculadora
+                    </a>
+                </div>
+            </div>
+
+            <div class="enllaç-item" data-categoria="comunitat apendre">
+                <div class="enllaç-icona">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="enllaç-contingut">
+                    <h3>ARK Wiki Dot</h3>
+                    <p class="enllaç-desc">Wiki alternativa amb una interfície neta i informació molt detallada.</p>
+                    <div class="enllaç-meta">
+                        <span class="categoria-tag comunitat">Comunitat</span>
+                        <span class="visites"><i class="fas fa-star"></i> Ben valorada</span>
+                    </div>
+                    <a href="https://ark.wiki.gg/" target="_blank" class="enllaç-btn">
+                        <i class="fas fa-external-link-alt"></i> Visitar Wikidot
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="destacat-enllaç">
+            <div class="destacat-icona">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="destacat-contingut">
+                <h3>Enllaç Recomanat del Mes</h3>
+                <p><strong>ARK Smart Breeding</strong> - Una eina avançada per a criadors seriosos que volen optimitzar les estadístiques de les seves criatures. Perfecte per jugadors que busquen la perfecció genètica.</p>
+                <a href="https://github.com/cadon/ARKStatsExtractor" target="_blank" class="destacat-btn">
+                    <i class="fas fa-download"></i> Descarregar Eina
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="peu-pàgina">
+        <div class="footer-content">
+            <div class="contacte">
+                <h3>Contacte</h3>
+                <p><i class="fas fa-envelope"></i> info@arkweb.cat</p>
+                <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="any3"></span> Ark Web. Tots els drets reservats.</p>
+                <p>ARK: Survival Evolved és una marca registrada de Studio Wildcard.</p>
+            </div>
+            <div class="xarxes-socials">
+                <h3>Segueix-nos</h3>
+                <div class="xarxes-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('any3').textContent = new Date().getFullYear();
+
+        const filtreBtns = document.querySelectorAll('.filtre-btn');
+        const enllaçItems = document.querySelectorAll('.enllaç-item');
+
+        filtreBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                filtreBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const categoria = this.getAttribute('data-categoria');
+                
+                enllaçItems.forEach(item => {
+                    if (categoria === 'tots') {
+                        item.style.display = 'flex';
+                    } else {
+                        const categoriesItem = item.getAttribute('data-categoria');
+                        if (categoriesItem.includes(categoria)) {
+                            item.style.display = 'flex';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+
+        window.addEventListener('load', function() {
+            enllaçItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+
+        function actualitzarComptadors() {
+            const comptadors = document.querySelectorAll('.visites');
+            comptadors.forEach(comptador => {
+                const text = comptador.textContent;
+                if (text.includes('M/mes') || text.includes('K usuaris')) {
+                }
+            });
+        }
+
+        actualitzarComptadors();
+    </script>
+</body>
+</html>
