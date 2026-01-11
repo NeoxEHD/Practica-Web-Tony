@@ -160,6 +160,19 @@
 
     <script>
         document.getElementById('any5').textContent = new Date().getFullYear();
+    
+        const musicUrl = "https://universitatdevic-my.sharepoint.com/:u:/g/personal/anthonyemerson_huaman_uvic_cat/IQDwb8TI2Py3Rp6MjmTxAL8aAbyqQntSghdMojzwNHvzH3E?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=EsteKu";
+        const audio = new Audio(musicUrl);
+        audio.loop = true;
+        audio.volume = 0.3;
+        
+        audio.play().catch(error => {
+            document.addEventListener('click', function iniciarMusica() {
+                audio.play();
+                document.removeEventListener('click', iniciarMusica);
+            });
+        });
     </script>
 </body>
+
 </html>
