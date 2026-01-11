@@ -971,18 +971,19 @@
             
             mapaActiu = null;
         }
-        const musicUrl = "https://universitatdevic-my.sharepoint.com/:u:/g/personal/anthonyemerson_huaman_uvic_cat/IQATJ4vJME4-QqUDTm21qaTqAc8vs8YDftoRwLonhIMh3js?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=IhIjvt";
-        const audio = new Audio(musicUrl);
-        audio.loop = true;
-        audio.volume = 0.3;
+        const musicUrl2 = "https://universitatdevic-my.sharepoint.com/:u:/g/personal/anthonyemerson_huaman_uvic_cat/IQDwb8TI2Py3Rp6MjmTxAL8aAbyqQntSghdMojzwNHvzH3E?download=1";
+        const audio2 = new Audio(musicUrl2);
+        audio2.loop = true;
+        audio2.volume = 0.3;
         
-        audio.play().catch(error => {
-            document.addEventListener('click', function iniciarMusica() {
-                audio.play();
-                document.removeEventListener('click', iniciarMusica);
+        audio2.play().catch(error => {
+            document.addEventListener('click', function iniciarMusica2() {
+                audio2.play();
+                document.removeEventListener('click', iniciarMusica2);
             });
         });
     </script>
 </body>
 
 </html>
+
