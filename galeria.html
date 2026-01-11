@@ -368,19 +368,20 @@
         function descarregarImatges(categoria) {
             alert(`Massa complicat per fer-ho, m'he quedat tontet intentat fer-lo`);
         }
-        const musicUrl = "https://universitatdevic-my.sharepoint.com/:u:/g/personal/anthonyemerson_huaman_uvic_cat/IQCjU42DtBl8SoAWtNJMpnUlATuSOLgUkQoLpGyHfaga_Lo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XJtGJg";
-        const audio = new Audio(musicUrl);
-        audio.loop = true;
-        audio.volume = 0.3;
+        const musicUrl3 = "https://universitatdevic-my.sharepoint.com/:u:/g/personal/anthonyemerson_huaman_uvic_cat/IQCjU42DtBl8SoAWtNJMpnUlATuSOLgUkQoLpGyHfaga_Lo?download=1";
+        const audio3 = new Audio(musicUrl3);
+        audio3.loop = true;
+        audio3.volume = 0.3;
         
-        audio.play().catch(error => {
-            document.addEventListener('click', function iniciarMusica() {
-                audio.play();
-                document.removeEventListener('click', iniciarMusica);
+        audio3.play().catch(error => {
+            document.addEventListener('click', function iniciarMusica3() {
+                audio3.play();
+                document.removeEventListener('click', iniciarMusica3);
             });
         });
     </script>
 </body>
 
 </html>
+
 
